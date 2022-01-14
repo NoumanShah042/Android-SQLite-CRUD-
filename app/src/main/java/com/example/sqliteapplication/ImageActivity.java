@@ -14,12 +14,13 @@ import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 
+// https://www.youtube.com/watch?v=v54dyccVZn0&list=PL4_qJDCYtHa9JgZRk5i71jsVaFjrUwf6u&index=6
 public class ImageActivity extends AppCompatActivity {
     TextView textView, nameTxt;
     EditText editText;
     ImageView imageView;
     Button button;
-    MyDataBase DB;
+    DBImage DB;
     String nameDB;
     Bitmap imageDB;
 
@@ -31,7 +32,7 @@ public class ImageActivity extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.edittext);
         imageView = (ImageView) findViewById(R.id.image);
         button = (Button) findViewById(R.id.button);
-        DB = new MyDataBase(ImageActivity.this);
+        DB = new DBImage(ImageActivity.this);
         nameTxt = (TextView) findViewById(R.id.textview1);
 
         button.setOnClickListener(new View.OnClickListener() {

@@ -10,8 +10,8 @@ import android.graphics.BitmapFactory;
 
 import androidx.annotation.Nullable;
 
-public class MyDataBase extends SQLiteOpenHelper {
-    public MyDataBase(Context context) {
+public class DBImage extends SQLiteOpenHelper {
+    public DBImage(Context context) {
         super(context, "name.db", null, 1);
     }
 
